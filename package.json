@@ -1,7 +1,6 @@
 {
   "name": "@civ-clone/core-terrain",
-  "version": "0.1.0",
-  "main": "index.js",
+  "version": "0.1.1",
   "repository": "git@github.com:civ-clone/core-terrain.git",
   "keywords": [
     "typescript",
