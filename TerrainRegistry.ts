@@ -8,7 +8,8 @@ export interface ITerrainRegistry extends IConstructorRegistry<Terrain> {}
 
 export class TerrainRegistry
   extends ConstructorRegistry<Terrain>
-  implements ITerrainRegistry {
+  implements ITerrainRegistry
+{
   constructor() {
     super(Terrain);
   }

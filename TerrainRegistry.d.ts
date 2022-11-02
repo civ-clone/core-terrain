@@ -6,7 +6,8 @@ import Terrain from './Terrain';
 export interface ITerrainRegistry extends IConstructorRegistry<Terrain> {}
 export declare class TerrainRegistry
   extends ConstructorRegistry<Terrain>
-  implements ITerrainRegistry {
+  implements ITerrainRegistry
+{
   constructor();
 }
 export declare const instance: TerrainRegistry;

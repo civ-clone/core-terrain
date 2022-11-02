@@ -6,7 +6,7 @@ import {
   RuleRegistry,
   instance as ruleRegistryInstance,
 } from '@civ-clone/core-rule/RuleRegistry';
-import { Created, ICreatedRegistry } from './Rules/Created';
+import Created from './Rules/Created';
 
 export interface ITerrain extends IDataObject {
   clone(): Terrain;
@@ -20,7 +20,7 @@ export class Terrain extends DataObject implements ITerrain {
 
     this.#ruleRegistry = ruleRegistry;
 
-    (this.#ruleRegistry as ICreatedRegistry).process(Created, this);
+    this.#ruleRegistry.process(Created, this);
   }
 
   clone(): Terrain {
